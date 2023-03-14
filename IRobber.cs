@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace Heist2
 {
     public interface IRobber
@@ -10,5 +13,12 @@ namespace Heist2
         {
 
         }
+
+        void GetTools(List<string> HackerTools, Bank NewBank)
+        {
+
+        }
+
+
     }
 }
