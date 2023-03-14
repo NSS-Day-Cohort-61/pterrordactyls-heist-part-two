@@ -23,6 +23,8 @@ namespace Heist2
 
         newMember:
             Console.WriteLine($"Available Operatives: {rolodex.Count}");
+            Console.WriteLine("");
+
             Console.WriteLine("Who would you like to add to your rolodex?");
             string newName = Console.ReadLine();
         specs:
@@ -47,6 +49,7 @@ namespace Heist2
             Console.WriteLine($"What is {newName}'s skill level? (0 - 100)");
             int newSkill = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("");
             Console.WriteLine($"What is {newName}'s percent of the cut for a mission? (0 - 100)");
             int newPercent = int.Parse(Console.ReadLine());
 
@@ -66,10 +69,13 @@ namespace Heist2
                 rolodex.Add(newLockSpecialist);
             }
 
+
+            Console.WriteLine("");
             Console.WriteLine("Is there anyone else to add to your rolodex? Yes/No");
             string ContinueAdd = Console.ReadLine().ToLower();
             if (ContinueAdd == "yes" || ContinueAdd == "y")
             {
+                Console.WriteLine("");
                 goto newMember;
             }
 
@@ -84,11 +90,6 @@ namespace Heist2
 
             int MaxValue = NewBank.GetMaxSecurity();
             int MinValue = NewBank.GetMinSecurity();
-
-            // Console.WriteLine($"Alarm: {NewBank.AlarmScore}");
-            // Console.WriteLine($"Vault: {NewBank.VaultScore}");
-            // Console.WriteLine($"Security: {NewBank.SecurityGuardScore}");
-            // Console.WriteLine($"Cash: {NewBank.CashOnHand}");
 
             PropertyInfo[] props = NewBank.GetType().GetProperties();
 
@@ -133,6 +134,7 @@ Cut Percent: {item.PercentageCut}
 
             Console.WriteLine("Who are you calling to add to the crew?");
             int callNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("");
 
             if (callNumber <= rolodex.Count)
             {
@@ -159,19 +161,90 @@ Cut Percent: {item.PercentageCut}
                 Console.WriteLine("");
             }
 
+            List<string> HackerTools = new List<string>()
+            {
+                "Thumbdrive", "Quantum Computer", "BT Speaker", "Dark Web", "Gun"
+            };
+
+            List<string> MuscleTools = new List<string>()
+            {
+                "Brass Knuckles", "Darksaber", "Nunchucks", "Zipties", "Gun"
+            };
+
+            List<string> LockPickTools = new List<string>()
+            {
+                "Lockpick 3000", "Laser Drill", "Screwdiver", "NanoTech Lockpick", "Gun"
+            };
+
             foreach (var member in Crew)
             {
-                member.PerformSkill(NewBank);
+
+                if (member.GetType().Name == "Hacker")
+                {
+                    member.GetTools(HackerTools, NewBank);
+                }
+                else if (member.GetType().Name == "Muscle")
+                {
+                    member.GetTools(MuscleTools, NewBank);
+                }
+                else
+                {
+                    member.GetTools(LockPickTools, NewBank);
+                }
             }
+
 
             if (NewBank.IsSecure)
             {
 
-                Console.WriteLine("The heist was a failure. The crew was all arrested!");
+                if (NewBank.AlarmScore > 0)
+                {
+
+                    foreach (var mem in Crew)
+                    {
+                        if (mem.GetType().Name == "Hacker")
+                        {
+                            Console.WriteLine($"The heist was a failure. {mem.Name} couldn't hack it as a hacker. ");
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("The heist was a failure. No hacker.");
+                        }
+                    }
+                }
+                if (NewBank.SecurityGuardScore > 0)
+                {
+                    foreach (var mem in Crew)
+                    {
+                        if (mem.GetType().Name == "Muscle")
+                        {
+                            Console.WriteLine($"The heist was a failure. {mem.Name} didn't have enough muscle for the job.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("The heist was a failure. No muscle.");
+                        }
+                    }
+                }
+                if (NewBank.VaultScore > 0)
+                {
+                    foreach (var mem in Crew)
+                    {
+                        if (mem.GetType().Name == "LockSpecialist")
+                        {
+                            Console.WriteLine($"The heist was a failure. {mem.Name} could't crack the locks, i guess they weren't the right pick.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("The heist was a failure. No lock specialist.");
+                        }
+                    }
+                }
+
             }
             else
             {
-
                 List<string> escapeRoutes = new List<string>()
                 {
                     "The Bahamas", "Barbados", "Trinidad", "Argentina", "Switzerland"

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Heist2
 {
@@ -18,6 +19,30 @@ namespace Heist2
             {
                 Console.WriteLine($"{Name} took out the guards. One less thing to worry about.");
             }
+        }
+        public void GetTools(List<string> HackerTools, Bank NewBank)
+        {
+
+            int HIndex = new Random().Next(0, 5);
+            string HackTool = HackerTools[HIndex];
+
+            if (HIndex != 1 && HIndex != 4)
+            {
+                this.SkillLevel = this.SkillLevel + 5;
+            }
+            else if (HIndex == 1)
+            {
+                NewBank.VaultScore = 0;
+                NewBank.SecurityGuardScore = 0;
+                NewBank.AlarmScore = 0;
+
+            }
+            else
+            {
+                this.SkillLevel = this.SkillLevel + 25;
+            }
+            this.PerformSkill(NewBank);
+            Console.WriteLine($"Finish hack with {HackTool}");
         }
 
         public Muscle(string newName, int newSkill, int newPercent)
