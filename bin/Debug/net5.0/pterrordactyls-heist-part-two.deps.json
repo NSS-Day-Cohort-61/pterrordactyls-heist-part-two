@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "pterrordactyls-heist-part-two/1.0.0": {
+        "runtime": {
+          "pterrordactyls-heist-part-two.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pterrordactyls-heist-part-two/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

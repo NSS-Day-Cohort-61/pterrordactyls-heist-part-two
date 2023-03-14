@@ -1,0 +1,16 @@
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.exe
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.deps.json
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.runtimeconfig.json
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.runtimeconfig.dev.json
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.dll
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\ref\pterrordactyls-heist-part-two.dll
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\bin\Debug\net5.0\pterrordactyls-heist-part-two.pdb
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.csproj.AssemblyReference.cache
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.AssemblyInfoInputs.cache
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.AssemblyInfo.cs
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.csproj.CoreCompileInputs.cache
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.dll
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\ref\pterrordactyls-heist-part-two.dll
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.pdb
+C:\Users\mrsny\workspace\pterrordactyls-heist-part-two\obj\Debug\net5.0\pterrordactyls-heist-part-two.genruntimeconfig.cache
