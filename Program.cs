@@ -9,22 +9,22 @@ namespace Heist2
         static void Main(string[] args)
         {
 
-            Hacker hack1 = new Hacker("Jade", 40, 25);
-            Hacker hack2 = new Hacker("Akshay", 65, 25);
-            LockSpecialist lock1 = new LockSpecialist("Cassie", 65, 25);
-            LockSpecialist lock2 = new LockSpecialist("Franko", 20, 10);
-            Muscle musc1 = new Muscle("Marek", 70, 25);
-            Muscle musc2 = new Muscle("Joe Bibs", 50, 20);
+            Hacker hack1 = new ("Jade", 40, 25);
+            Hacker hack2 = new ("Akshay", 65, 25);
+            LockSpecialist lock1 = new ("Cassie", 65, 25);
+            LockSpecialist lock2 = new ("Franko", 20, 10);
+            Muscle musc1 = new ("Marek", 70, 25);
+            Muscle musc2 = new ("Joe Bibs", 50, 20);
 
-            List<IRobber> rolodex = new List<IRobber>()
+            List<IRobber> rolodex = new ()
             {
                 hack1, hack2, lock1, lock2, musc1, musc2
             };
 
         newMember:
-            Console.WriteLine($"Available Operatives: {rolodex.Count}");
-            Console.WriteLine("");
-
+            Console.WriteLine("WELCOME READY TO ROB A BANK\n" +
+                "Add a member");
+            Console.WriteLine($"Available Operatives: {rolodex.Count}\n");
             Console.WriteLine("Who would you like to add to your rolodex?");
             string newName = Console.ReadLine();
         specs:
@@ -97,11 +97,11 @@ namespace Heist2
             {
                 if (int.Parse(props[i].GetValue(NewBank).ToString()) == MaxValue)
                 {
-                    Console.WriteLine($"Most Secure: {props[i].Name}");
+                    Console.WriteLine($"\nMost Secure: {props[i].Name}");
                 }
                 else if (int.Parse(props[i].GetValue(NewBank).ToString()) == MinValue)
                 {
-                    Console.WriteLine($"Least Secure: {props[i].Name}");
+                    Console.WriteLine($"\nLeast Secure: {props[i].Name}");
                 }
                 else
                 {
