@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mrsny\\.nuget\\packages\\": {}
+    "C:\\Users\\deser\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrsny\\workspace\\pterrordactyls-heist-part-two\\pterrordactyls-heist-part-two.csproj",
+      "projectUniqueName": "C:\\Users\\deser\\workspace\\csharp\\pterrordactyls-heist-part-two\\pterrordactyls-heist-part-two.csproj",
       "projectName": "pterrordactyls-heist-part-two",
-      "projectPath": "C:\\Users\\mrsny\\workspace\\pterrordactyls-heist-part-two\\pterrordactyls-heist-part-two.csproj",
-      "packagesPath": "C:\\Users\\mrsny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrsny\\workspace\\pterrordactyls-heist-part-two\\obj\\",
+      "projectPath": "C:\\Users\\deser\\workspace\\csharp\\pterrordactyls-heist-part-two\\pterrordactyls-heist-part-two.csproj",
+      "packagesPath": "C:\\Users\\deser\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\deser\\workspace\\csharp\\pterrordactyls-heist-part-two\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrsny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deser\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }
