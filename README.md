@@ -1,4 +1,4 @@
-# Heist
+# Heist 💰
 ## Create a crew to rob a bank. 
 
 This project was to practice using interfaces and inheritance among classes. 
